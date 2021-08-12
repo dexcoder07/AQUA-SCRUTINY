@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<body class = "text-center">
+<div class = "container">
+    <div class="row align-items-center justify-content-center">
+    <div class="col-md-5">
+    <form method="POST" class = "form-register" style = "color:white">
+        {{form.hidden_tag()}}
+        <br>
+            <h1 class="h3 mb-3 font-weight-bold">
+                Create your Account
+            </h1>
+        <br>
+
+        <br>
+        {{form.ph(class="form-control", placeholder="Ph level of Water", size="10")}}
+
+        <br>
+
+        {{form.hardness(class = "form-control", placeholder="Hardness")}}
+
+        <br>
+
+        {{form.dis_solids(class = "form-control", placeholder="Dissolved Solids in Water")}}
+
+        <br>
+
+        {{form.Chloramines(class="form-control", placeholder="Amount of Chloramines in Water")}}
+
+        <br>
+
+        {{form.Sulfate(class="form-control", placeholder="Amount of Sulfate in Water")}}
+
+        <br>
+
+        {{form.Conductivity(class="form-control", placeholder="Conductivity of water")}}
+
+        <br>
+
+        {{form.org_carbon(class="form-control", placeholder="Amount of Organic Carbon in Water")}}
+
+        <br>
+
+        {{form.Trihalomethanes(class="form-control", placeholder="Amount of Trihalomethanes in Water")}}
+
+        <br>
+
+        {{form.Turbidity(class="form-control", placeholder="Amount of Turbidity in Water")}}
+
+        <br>
+
+        {{ form.submit(class="btn btn-primary btn-lg active") }}
+    </form>
+    </div>
+    </div>
+</div>
+</body>
+{% endblock %}
